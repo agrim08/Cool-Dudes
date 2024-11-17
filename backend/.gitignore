@@ -26,3 +26,5 @@ friends.db
 # Dependency directories
 node_modules/
 /dist/
+
+migrations
