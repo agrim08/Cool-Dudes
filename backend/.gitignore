@@ -27,4 +27,5 @@ friends.db
 node_modules/
 /dist/
 
+instance/
 migrations
