@@ -49,6 +49,10 @@ const CreateUserModal = ({ setUsers }) => {
         throw new Error(data.error);
       }
 
+      // Add new user to the state
+      setUsers((prevUsers) => [...prevUsers, data]);
+
+      // Show success toast and reset form
       toast({
         status: "success",
         title: "Yayy! 🎉",
@@ -56,9 +60,8 @@ const CreateUserModal = ({ setUsers }) => {
         duration: 2000,
         position: "top-center",
       });
-      onClose();
-      setUsers((prevUsers) => [...prevUsers, data]);
 
+      onClose();
       setInputs({
         name: "",
         role: "",
