@@ -26,7 +26,6 @@ const UserGrid = ({ users, setUsers }) => {
     getUsers();
   }, [setUsers]);
 
-  console.log(users);
   return (
     <>
       <Grid
